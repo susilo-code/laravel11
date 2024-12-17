@@ -1,18 +1,20 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-<a href="/">Home</a>
-<a href="/about">About</a>
-<a href="/blog">Blog</a>
-<a href="/contact">Contact</a>
-    <h1>Berita 1</h1>
-    <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Harum tempore, at repudiandae culpa atque aperiam suscipit in rerum ullam exercitationem necessitatibus unde cumque ad fuga mollitia excepturi asperiores dolorem ipsa!</h3>
-    <h1>Berita 2</h1>
-    <h3>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusantium dolore sit odio iste, error rerum alias quidem odit doloribus. Adipisci inventore magni quae cumque doloremque aut, veritatis nam dolor minus.</h3>
-</body>
-</html>
+<x-layout>
+<x-slot:title>{{$title}}</x-slot:title>
+  <article class="py-8 max-w-screen-md border-b border-b-gray-300">
+    <h2 class="mb-1 text-3xl tracking-tight font-bold text-gray-900">Judul Artikel</h2>
+    <div class="text-base text-gray-500"><a href="">Susilo</a> | 12 December 2024
+  </div>
+  <p class="my-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius labore rerum fugiat dolore velit,
+     laborum inventore quam totam tempora rem dicta error voluptas dolorem. Laborum accusantium 
+     velit expedita vel deleniti!</p>
+  <a class="font-medium text-blue-500 hover:underline" href="">Read more &raquo;</a>
+  </article>
+  <article class="py-8 max-w-screen-md border-b border-b-gray-300">
+    <h2 class="mb-1 text-3xl tracking-tight font-bold text-gray-900">Judul Artikel</h2>
+    <div class="text-base text-gray-500"><a href="">Susilo</a> | 13 December 2024
+  </div>
+  <p class="my-4 font-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae ducimus, officia suscipit praesentium veniam dicta? Deserunt tempore dolor quia magnam quo?
+     Quam dolorum qui ex quisquam molestias aspernatur repudiandae labore.</p>
+  <a class="font-medium text-blue-500 hover:underline" href="">Read more &raquo;</a>
+  </article>
+</x-layout>
